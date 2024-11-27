@@ -1,0 +1,65 @@
+# Основные файлы и папки, которые нужно игнорировать
+bin/
+obj/
+[Bb]uild/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Папки и файлы для кэша
+.vs/
+.vscode/
+.idea/
+_ReSharper*/ 
+*.DotSettings.user
+*.cache
+
+# Логи, временные файлы
+*.log
+*.tlog
+*.idb
+*.VC.db
+*.pidb
+*.ilk
+*.pdb
+
+# Конфигурационные файлы IDE
+*.sln.ide
+*.userprefs
+*.csproj.user
+
+# Папки для NuGet
+packages/
+*.nupkg
+project.lock.json
+*.nuget.props
+*.nuget.targets
+
+# Папки и файлы временных хранилищ
+TestResults/
+*.ncrunch*
+*.coverage
+*.coveragexml
+
+# Папки для локального DevOps
+.localhistory/
+local.settings.json
+
+# Файлы Docker
+*.env
+docker-compose.override.yml
+
+# Сертификаты и ключи
+*.pfx
+*.snk
+
+# Файлы CI/CD
+*.yml
+*.yaml
+*.override.yml
+
+# Автоматически генерируемые файлы
+**/Generated_Code/
+**/*.g.cs
