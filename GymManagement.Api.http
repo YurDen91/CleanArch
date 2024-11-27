@@ -1,0 +1,6 @@
+@GymManagement.Api_HostAddress = http://localhost:5026
+
+GET http://localhost:5026/weatherforecast
+
+
+###
