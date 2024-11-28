@@ -1,4 +1,6 @@
-﻿using GymManagement.Contracts.Subscriptions;
+﻿using GymManagement.Application.Sunscriptions.Commands.CreateSubscriptionFolder;
+using GymManagement.Contracts.Subscriptions;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GymManagement.Api.Controllers;
@@ -8,16 +10,31 @@ namespace GymManagement.Api.Controllers;
 public class SubscriptionsController : ControllerBase
 {
     private readonly ILogger<SubscriptionsController> _logger;
+    private readonly ISender _mediator;
 
-    public SubscriptionsController(ILogger<SubscriptionsController> logger)
+    public SubscriptionsController(
+        ILogger<SubscriptionsController> logger,
+        ISender mediator)
     {
         _logger = logger;
+        _mediator = mediator;
     }
 
     [HttpPost]
-    public IActionResult CreateSubscription(CreateSubscriptionRequest request)
+    public async Task<IActionResult> CreateSubscription(CreateSubscriptionRequest request)
     {
-        return Ok(request);
+        var command = new CreateSubscriptionCommand(
+            request.SubscriptionType.ToString(),
+            request.AdminId);
+
+        var subscriptionId = await _mediator.Send(command);
+
+        var response = new SubscriptionResponse(
+            subscriptionId,
+            request.SubscriptionType);
+
+        return Ok(response);
+
     }
 
     [HttpGet]

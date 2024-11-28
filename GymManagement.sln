@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Application",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Domain", "src\GymManagement.Domain\GymManagement.Domain.csproj", "{FFC99F43-1BE4-460B-96A9-4FEDCD6376DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Infrastrucuture", "src\GymManagement.Infrastrucuture\GymManagement.Infrastrucuture.csproj", "{7585B00D-F0AF-49A5-BC49-5EACF2C010DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Infrastructure", "src\GymManagement.Infrastructure\GymManagement.Infrastructure.csproj", "{7585B00D-F0AF-49A5-BC49-5EACF2C010DA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "requests", "requests", "{70FA0590-A017-4EF2-A59D-C32D543D695B}"
 EndProject
