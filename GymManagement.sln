@@ -18,6 +18,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Subscriptions", "Subscriptions", "{A7D82637-2DF8-4718-8D5D-5CD7263BE9DC}"
 	ProjectSection(SolutionItems) = preProject
 		CreateSubscription.http = CreateSubscription.http
+		GetSubscription.http = GetSubscription.http
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Contracts", "src\GymManagement.Contracts\GymManagement.Contracts.csproj", "{CEC19363-70C7-42D6-9AD0-5865A2EE5E41}"

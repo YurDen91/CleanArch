@@ -1,7 +1,9 @@
 ﻿using GymManagement.Application.Sunscriptions.Commands.CreateSubscriptionFolder;
+using GymManagement.Application.Sunscriptions.Queries.GetSubscription;
 using GymManagement.Contracts.Subscriptions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using DomainSubscriptionType = GymManagement.Domain.Subscriptions.SubscriptionType;
 
 namespace GymManagement.Api.Controllers;
 
@@ -23,28 +25,31 @@ public class SubscriptionsController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateSubscription(CreateSubscriptionRequest request)
     {
+        if(DomainSubscriptionType.TryFromName(request.SubscriptionType.ToString(), out var subscriptionType) == false)
+        {
+            return Problem(statusCode: StatusCodes.Status400BadRequest, detail: "Invalid subscription type");
+        }
+        
         var command = new CreateSubscriptionCommand(
-            request.SubscriptionType.ToString(),
+            subscriptionType,
             request.AdminId);
 
-        var subscriptionId = await _mediator.Send(command);
-
-        var response = new SubscriptionResponse(
-            subscriptionId,
-            request.SubscriptionType);
-
-        return Ok(response);
+        var createSubscriptionResult = await _mediator.Send(command);
+        
+        return createSubscriptionResult.MatchFirst(
+            subscription => Ok(new SubscriptionResponse(subscription.Id, request.SubscriptionType)),
+            error => Problem());
 
     }
 
-    [HttpGet]
-    public IEnumerable<SubscriptionResponse> Get()
+    [HttpGet("{subscriptionId:guid}")]
+    public async Task<IActionResult> GetSubscription(Guid subscriptionId)
     {
-        return new List<SubscriptionResponse>
-        {
-            new SubscriptionResponse(Guid.NewGuid(), SubscriptionType.Free),
-            new SubscriptionResponse(Guid.NewGuid(), SubscriptionType.Starter),
-            new SubscriptionResponse(Guid.NewGuid(), SubscriptionType.Pro)
-        };
+        var query = new GetSubscriptionQuery(subscriptionId);
+        
+        var getSubscriptionResult = await _mediator.Send(query);
+        return getSubscriptionResult.MatchFirst(
+            subscription => Ok(new SubscriptionResponse(subscription.Id, Enum.Parse<SubscriptionType>(subscription.SubscriptionType.Name))),
+            error => Problem());
     }
 }

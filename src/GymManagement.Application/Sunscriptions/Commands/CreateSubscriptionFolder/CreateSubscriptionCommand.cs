@@ -1,5 +1,7 @@
 ﻿using MediatR;
+using ErrorOr;
+using GymManagement.Domain.Subscriptions;
 
 namespace GymManagement.Application.Sunscriptions.Commands.CreateSubscriptionFolder;
 
-public record CreateSubscriptionCommand(string subscriptionType, Guid adminId) : IRequest<Guid>;
+public record CreateSubscriptionCommand(SubscriptionType subscriptionType, Guid adminId) : IRequest<ErrorOr<Subscription>>;
