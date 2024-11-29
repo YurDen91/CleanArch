@@ -1,0 +1,5 @@
+@host = http://localhost:5026
+@subscriptionId=281CA91D-2CB4-4214-ADAE-6A55D947503C
+@gymId=fcbee3e6-da5b-4c5f-9922-71535d539e74
+
+DELETE {{host}}/subscriptions/{{subscriptionId}}/gyms/{{gymId}}

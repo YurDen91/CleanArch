@@ -1,5 +1,5 @@
 @host = http://localhost:5026
-@adminId=B7915777-DB4B-4628-B4DF-9B8BCBCBC8F2
+@adminId=2150e333-8fdc-42a3-9474-1a3956d46de8
 
 POST {{host}}/Subscriptions
 Content-Type: application/json

@@ -28,7 +28,7 @@ public class SubscriptionsController : ControllerBase
     {
         if(!DomainSubscriptionType.TryFromName(
                request.SubscriptionType.ToString(),
-               out var subscriptionType) == false)
+               out var subscriptionType))
         {
             return Problem(
                 statusCode: StatusCodes.Status400BadRequest,

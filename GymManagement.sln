@@ -17,7 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "requests", "requests", "{70
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Subscriptions", "Subscriptions", "{A7D82637-2DF8-4718-8D5D-5CD7263BE9DC}"
 	ProjectSection(SolutionItems) = preProject
+		CreateGym.http = CreateGym.http
 		CreateSubscription.http = CreateSubscription.http
+		DeleteGym.http = DeleteGym.http
+		DeleteSubscription.http = DeleteSubscription.http
 		GetSubscription.http = GetSubscription.http
 	EndProjectSection
 EndProject
