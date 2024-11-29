@@ -34,7 +34,7 @@ public class GymsController : ApiController
                 nameof(GetGym),
                 new { subscriptionId, GymId = gym.Id },
                 new GymResponse(gym.Id, gym.Name)),
-            Problem);
+            errors => Problem(errors));
     }
 
     [HttpDelete("{gymId:guid}")]
