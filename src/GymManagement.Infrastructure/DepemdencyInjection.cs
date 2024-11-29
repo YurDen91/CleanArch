@@ -13,7 +13,7 @@ public static class DepemdencyInjection
         var optionsBuilder = new DbContextOptionsBuilder<GymManagementDbContext>();
         optionsBuilder.UseSqlite("Data Source=GymManagement.db");
         
-        services.AddScoped<ISubscriptionRepository, SubscriptionsRepository>();
+        services.AddScoped<ISubscriptionsRepository, SubscriptionsRepository>();
         services.AddScoped<IUnitOfWork>(serviceProvider => serviceProvider.GetRequiredService<GymManagementDbContext>());
         return services;
     }

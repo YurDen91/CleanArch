@@ -7,14 +7,14 @@ namespace GymManagement.Application.Sunscriptions.Commands.CreateSubscriptionFol
 
 public class CreateSubscriptionCommandHandler : IRequestHandler<CreateSubscriptionCommand, ErrorOr<Subscription>>
 {
-    private readonly ISubscriptionRepository _subscriptionRepository;
+    private readonly ISubscriptionsRepository _subscriptionsRepository;
     private readonly IUnitOfWork _unitOfWork;
 
     public CreateSubscriptionCommandHandler(
-        ISubscriptionRepository subscriptionRepository,
+        ISubscriptionsRepository subscriptionsRepository,
         IUnitOfWork unitOfWork)
     {
-        _subscriptionRepository = subscriptionRepository;
+        _subscriptionsRepository = subscriptionsRepository;
         _unitOfWork = unitOfWork;
     }
 
@@ -24,8 +24,8 @@ public class CreateSubscriptionCommandHandler : IRequestHandler<CreateSubscripti
         var subscription = new Subscription(subscriptionType: request.subscriptionType, adminId: request.adminId);
         
         // add it to the database
-        await _subscriptionRepository.AddSubscriptionAsync(subscription);
-        await _unitOfWork.CommitChangeAsync();
+        await _subscriptionsRepository.AddSubscriptionAsync(subscription);
+        await _unitOfWork.CommitChangesAsync();
         // return the Subscription 
         return subscription;
     }
