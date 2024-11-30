@@ -16,15 +16,27 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "requests", "requests", "{70FA0590-A017-4EF2-A59D-C32D543D695B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Subscriptions", "Subscriptions", "{A7D82637-2DF8-4718-8D5D-5CD7263BE9DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Contracts", "src\GymManagement.Contracts\GymManagement.Contracts.csproj", "{CEC19363-70C7-42D6-9AD0-5865A2EE5E41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gyms", "Gyms", "{20A8A5FF-D452-4ECE-877A-6BC989C53D50}"
 	ProjectSection(SolutionItems) = preProject
 		CreateGym.http = CreateGym.http
-		CreateSubscription.http = CreateSubscription.http
 		DeleteGym.http = DeleteGym.http
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rooms", "Rooms", "{9CE0CF58-3011-4DB1-BF7E-EB5D51F72B21}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\torrent\Getting Started Clean Architecture in .NET\code\12-end\requests\Rooms\CreateRoom.http = ..\..\torrent\Getting Started Clean Architecture in .NET\code\12-end\requests\Rooms\CreateRoom.http
+		..\..\torrent\Getting Started Clean Architecture in .NET\code\12-end\requests\Rooms\DeleteRoom.http = ..\..\torrent\Getting Started Clean Architecture in .NET\code\12-end\requests\Rooms\DeleteRoom.http
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sunscriptions", "Sunscriptions", "{9A154806-61E1-4680-B3BD-4A0716433A66}"
+	ProjectSection(SolutionItems) = preProject
+		CreateSubscription.http = CreateSubscription.http
 		DeleteSubscription.http = DeleteSubscription.http
 		GetSubscription.http = GetSubscription.http
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Contracts", "src\GymManagement.Contracts\GymManagement.Contracts.csproj", "{CEC19363-70C7-42D6-9AD0-5865A2EE5E41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,5 +75,8 @@ Global
 		{7585B00D-F0AF-49A5-BC49-5EACF2C010DA} = {AF6FA622-9FAC-44EB-9E19-8F1C16AF29ED}
 		{A7D82637-2DF8-4718-8D5D-5CD7263BE9DC} = {70FA0590-A017-4EF2-A59D-C32D543D695B}
 		{CEC19363-70C7-42D6-9AD0-5865A2EE5E41} = {AF6FA622-9FAC-44EB-9E19-8F1C16AF29ED}
+		{20A8A5FF-D452-4ECE-877A-6BC989C53D50} = {A7D82637-2DF8-4718-8D5D-5CD7263BE9DC}
+		{9CE0CF58-3011-4DB1-BF7E-EB5D51F72B21} = {A7D82637-2DF8-4718-8D5D-5CD7263BE9DC}
+		{9A154806-61E1-4680-B3BD-4A0716433A66} = {A7D82637-2DF8-4718-8D5D-5CD7263BE9DC}
 	EndGlobalSection
 EndGlobal
