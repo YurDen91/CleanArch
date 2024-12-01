@@ -21,8 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Contracts", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gyms", "Gyms", "{20A8A5FF-D452-4ECE-877A-6BC989C53D50}"
 	ProjectSection(SolutionItems) = preProject
+		AddTrainer.http = AddTrainer.http
 		CreateGym.http = CreateGym.http
 		DeleteGym.http = DeleteGym.http
+		ListGyms.http = ListGyms.http
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rooms", "Rooms", "{9CE0CF58-3011-4DB1-BF7E-EB5D51F72B21}"
