@@ -4,4 +4,4 @@ using GymManagement.Domain.Subscriptions;
 
 namespace GymManagement.Application.Sunscriptions.Commands.CreateSubscriptionFolder;
 
-public record CreateSubscriptionCommand(SubscriptionType subscriptionType, Guid adminId) : IRequest<ErrorOr<Subscription>>;
+public record CreateSubscriptionCommand(SubscriptionType SubscriptionType, Guid AdminId) : IRequest<ErrorOr<Subscription>>;
