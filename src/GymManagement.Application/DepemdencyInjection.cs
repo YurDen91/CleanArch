@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using FluentValidation;
+using GymManagement.Application.Common.Behaviors;
 
 namespace GymManagement.Application;
 
@@ -6,10 +8,14 @@ public static class DepemdencyInjection
 {
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
-        services.AddMediatR(otions =>
+        services.AddMediatR(options =>
         {
-            otions.RegisterServicesFromAssemblyContaining(typeof(DepemdencyInjection));
+            options.RegisterServicesFromAssemblyContaining(typeof(DepemdencyInjection));
+
+            options.AddOpenBehavior(typeof(ValidationBehavior<,>));
         });
+
+        services.AddValidatorsFromAssemblyContaining(typeof(DepemdencyInjection));
 
         return services;
     }
