@@ -1,6 +1,5 @@
 using GymManagement.Application.Common.Interfaces;
 using GymManagement.Domain.Gyms;
-using GymManagement.Infrastructure.Common.Persistance;
 using GymManagement.Infrastructure.Common.Persistence;
 using Microsoft.EntityFrameworkCore;
 
@@ -30,12 +29,10 @@ public class GymsRepository : IGymsRepository
         return await _dbContext.Gyms.FirstOrDefaultAsync(gym => gym.Id == id);
     }
 
-    public async Task<List<Gym>> ListBySubscriptionIdAsync(Guid subscriptionId)
-    {
-        return await _dbContext.Gyms
+    public Task<List<Gym>> ListBySubscriptionIdAsync(Guid subscriptionId)
+        => _dbContext.Gyms
             .Where(gym => gym.SubscriptionId == subscriptionId)
             .ToListAsync();
-    }
 
     public Task RemoveGymAsync(Gym gym)
     {
