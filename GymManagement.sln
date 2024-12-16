@@ -48,6 +48,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCommon", "tests\TestCom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Domain.UnitTests", "tests\GymManagement.Domain.UnitTests\GymManagement.Domain.UnitTests.csproj", "{C3BEF905-6772-4B75-976F-CFAB6C5BD3B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Application.UnitTests", "tests\GymManagement.Application.UnitTests\GymManagement.Application.UnitTests.csproj", "{3FCC5382-6E00-4E5B-97D6-5E6FA988CEF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -82,6 +84,10 @@ Global
 		{C3BEF905-6772-4B75-976F-CFAB6C5BD3B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3BEF905-6772-4B75-976F-CFAB6C5BD3B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3BEF905-6772-4B75-976F-CFAB6C5BD3B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FCC5382-6E00-4E5B-97D6-5E6FA988CEF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FCC5382-6E00-4E5B-97D6-5E6FA988CEF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FCC5382-6E00-4E5B-97D6-5E6FA988CEF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FCC5382-6E00-4E5B-97D6-5E6FA988CEF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,5 +105,6 @@ Global
 		{D388BE3B-32CD-48C9-AF22-DEC6F89DA260} = {74A9DED6-A1E7-4CA8-8AF6-A7896927B369}
 		{CE1AE1B8-BA62-498F-BB9D-9D727A6D523E} = {D388BE3B-32CD-48C9-AF22-DEC6F89DA260}
 		{C3BEF905-6772-4B75-976F-CFAB6C5BD3B0} = {74A9DED6-A1E7-4CA8-8AF6-A7896927B369}
+		{3FCC5382-6E00-4E5B-97D6-5E6FA988CEF4} = {74A9DED6-A1E7-4CA8-8AF6-A7896927B369}
 	EndGlobalSection
 EndGlobal
