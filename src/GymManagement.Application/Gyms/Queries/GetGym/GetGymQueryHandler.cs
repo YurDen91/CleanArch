@@ -1,9 +1,9 @@
 using ErrorOr;
-using GymManagement.Application.Common.Interfaces;
+using GymManagement.Api.Common.Interfaces;
 using GymManagement.Domain.Gyms;
 using MediatR;
 
-namespace GymManagement.Application.Gyms.Queries.GetGym;
+namespace GymManagement.Api.Gyms.Queries.GetGym;
 
 public class GetGymQueryHandler : IRequestHandler<GetGymQuery, ErrorOr<Gym>>
 {

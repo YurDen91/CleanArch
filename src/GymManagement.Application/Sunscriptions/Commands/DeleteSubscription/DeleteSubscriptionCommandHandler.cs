@@ -1,8 +1,8 @@
 using ErrorOr;
-using GymManagement.Application.Common.Interfaces;
+using GymManagement.Api.Common.Interfaces;
 using MediatR;
 
-namespace GymManagement.Application.Subscriptions.Commands.DeleteSubscription;
+namespace GymManagement.Api.Subscriptions.Commands.DeleteSubscription;
 
 public class DeleteSubscriptionCommandHandler : IRequestHandler<DeleteSubscriptionCommand, ErrorOr<Deleted>>
 {

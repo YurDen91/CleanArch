@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace GymManagement.Application.SubcutaneousTests.Common;
+namespace GymManagement.Api.SubcutaneousTests.Common;
 
 [CollectionDefinition(CollectionName)]
 public class MediatorFactoryCollection : ICollectionFixture<MediatorFactory>

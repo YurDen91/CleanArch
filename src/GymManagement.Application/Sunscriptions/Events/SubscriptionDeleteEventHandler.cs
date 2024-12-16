@@ -1,8 +1,8 @@
-﻿using GymManagement.Application.Common.Interfaces;
+﻿using GymManagement.Api.Common.Interfaces;
 using GymManagement.Domain.Admins.Events;
 using MediatR;
 
-namespace GymManagement.Application.Sunscriptions.Events;
+namespace GymManagement.Api.Sunscriptions.Events;
 
 public class SubscriptionDeletedEventHandler(
     ISubscriptionsRepository subscriptionsRepository,

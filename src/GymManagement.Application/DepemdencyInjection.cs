@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using FluentValidation;
-using GymManagement.Application.Common.Behaviors;
+using GymManagement.Api.Common.Behaviors;
 
-namespace GymManagement.Application;
+namespace GymManagement.Api;
 
 public static class DepemdencyInjection
 {

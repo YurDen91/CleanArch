@@ -2,15 +2,15 @@
 using FluentAssertions;
 using FluentValidation.Results;
 using ErrorOr;
+using GymManagement.Api.Common.Behaviors;
+using GymManagement.Api.Gyms.Commands.CreateGym;
 using MediatR;
 using NSubstitute;
 using TestCommon.Gyms;
 using GymManagement.Domain.Gyms;
-using GymManagement.Application.Common.Behaviors;
-using GymManagement.Application.Gyms.Commands.CreateGym;
 
 
-namespace GymManagement.Application.UnitTests;
+namespace GymManagement.Api.UnitTests;
 
 public class ValidationBehaviorTests
 {

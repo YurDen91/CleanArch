@@ -1,5 +1,5 @@
-using GymManagement.Application.Rooms.Commands.CreateRoom;
-using GymManagement.Application.Rooms.Commands.DeleteRoom;
+using GymManagement.Api.Rooms.Commands.CreateRoom;
+using GymManagement.Api.Rooms.Commands.DeleteRoom;
 using GymManagement.Contracts.Rooms;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

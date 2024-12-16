@@ -1,9 +1,9 @@
 ﻿using MediatR;
 using ErrorOr;
-using GymManagement.Application.Common.Interfaces;
+using GymManagement.Api.Common.Interfaces;
 using GymManagement.Domain.Subscriptions;
 
-namespace GymManagement.Application.Sunscriptions.Commands.CreateSubscriptionFolder;
+namespace GymManagement.Api.Sunscriptions.Commands.CreateSubscriptionFolder;
 
 public class CreateSubscriptionCommandHandler : IRequestHandler<CreateSubscriptionCommand, ErrorOr<Subscription>>
 {

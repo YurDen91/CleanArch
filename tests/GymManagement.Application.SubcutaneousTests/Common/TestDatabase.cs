@@ -2,7 +2,7 @@ using GymManagement.Infrastructure.Common.Persistence;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
-namespace GymManagement.Application.SubcutaneousTests.Common;
+namespace GymManagement.Api.SubcutaneousTests.Common;
 
 /// <summary>
 /// In Subcutaneous tests we aren't testing integration with a real database,

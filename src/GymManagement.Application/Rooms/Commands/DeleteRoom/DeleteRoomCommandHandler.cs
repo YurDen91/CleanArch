@@ -1,9 +1,9 @@
 using ErrorOr;
-using GymManagement.Application.Common.Interfaces;
+using GymManagement.Api.Common.Interfaces;
 using MediatR;
 using Throw;
 
-namespace GymManagement.Application.Rooms.Commands.DeleteRoom;
+namespace GymManagement.Api.Rooms.Commands.DeleteRoom;
 
 public class DeleteRoomCommandHandler : IRequestHandler<DeleteRoomCommand, ErrorOr<Deleted>>
 {

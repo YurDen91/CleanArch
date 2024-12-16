@@ -1,4 +1,4 @@
-﻿using GymManagement.Application.Gyms.Commands.CreateGym;
+﻿using GymManagement.Api.Gyms.Commands.CreateGym;
 using TestCommon.TestConstants;
 
 namespace TestCommon.Gyms;

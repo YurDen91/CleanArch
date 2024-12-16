@@ -1,13 +1,13 @@
 using ErrorOr;
 using FluentAssertions;
-using GymManagement.Application.SubcutaneousTests.Common;
+using GymManagement.Api.SubcutaneousTests.Common;
 using GymManagement.Domain.Subscriptions;
 using MediatR;
 using TestCommon.Gyms;
 using TestCommon.Subscriptions;
 using Xunit;
 
-namespace GymManagement.Application.SubcutaneousTests.Gyms.Commands;
+namespace GymManagement.Api.SubcutaneousTests.Gyms.Commands;
 
 [Collection(MediatorFactoryCollection.CollectionName)]
 public class CreateGymTests(MediatorFactory mediatorFactory)

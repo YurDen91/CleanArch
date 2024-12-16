@@ -1,4 +1,4 @@
-﻿namespace GymManagement.Application.Common.Interfaces;
+﻿namespace GymManagement.Api.Common.Interfaces;
 
 public interface IUnitOfWork
 {

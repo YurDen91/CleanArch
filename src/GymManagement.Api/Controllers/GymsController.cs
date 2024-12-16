@@ -1,9 +1,9 @@
 using ErrorOr;
-using GymManagement.Application.Gyms.Commands.AddTrainer;
-using GymManagement.Application.Gyms.Commands.CreateGym;
-using GymManagement.Application.Gyms.Commands.DeleteGym;
-using GymManagement.Application.Gyms.Queries.GetGym;
-using GymManagement.Application.Gyms.Queries.ListGyms;
+using GymManagement.Api.Gyms.Commands.AddTrainer;
+using GymManagement.Api.Gyms.Commands.CreateGym;
+using GymManagement.Api.Gyms.Commands.DeleteGym;
+using GymManagement.Api.Gyms.Queries.GetGym;
+using GymManagement.Api.Gyms.Queries.ListGyms;
 using GymManagement.Contracts.Gyms;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

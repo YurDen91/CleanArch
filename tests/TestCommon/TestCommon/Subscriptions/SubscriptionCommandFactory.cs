@@ -1,4 +1,4 @@
-﻿using GymManagement.Application.Sunscriptions.Commands.CreateSubscriptionFolder;
+﻿using GymManagement.Api.Sunscriptions.Commands.CreateSubscriptionFolder;
 using GymManagement.Domain.Subscriptions;
 using TestCommon.TestConstants;
 

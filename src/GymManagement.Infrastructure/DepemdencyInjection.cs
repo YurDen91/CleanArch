@@ -1,4 +1,4 @@
-﻿using GymManagement.Application.Common.Interfaces;
+﻿using GymManagement.Api.Common.Interfaces;
 using GymManagement.Infrastructure.Admins.Persistence;
 using GymManagement.Infrastructure.Gyms.Persistence;
 using GymManagement.Infrastructure.Subscriptions;

@@ -1,6 +1,6 @@
 ﻿using GymManagement.Domain.Subscriptions;
 
-namespace GymManagement.Application.Common.Interfaces;
+namespace GymManagement.Api.Common.Interfaces;
 
 public interface ISubscriptionsRepository
 {

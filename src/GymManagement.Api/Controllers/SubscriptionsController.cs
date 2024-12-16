@@ -1,6 +1,6 @@
-﻿using GymManagement.Application.Subscriptions.Commands.DeleteSubscription;
-using GymManagement.Application.Sunscriptions.Commands.CreateSubscriptionFolder;
-using GymManagement.Application.Sunscriptions.Queries.GetSubscription;
+﻿using GymManagement.Api.Subscriptions.Commands.DeleteSubscription;
+using GymManagement.Api.Sunscriptions.Commands.CreateSubscriptionFolder;
+using GymManagement.Api.Sunscriptions.Queries.GetSubscription;
 using GymManagement.Contracts.Subscriptions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

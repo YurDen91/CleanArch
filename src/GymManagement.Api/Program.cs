@@ -1,4 +1,4 @@
-using GymManagement.Application;
+using GymManagement.Api;
 using GymManagement.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);

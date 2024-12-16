@@ -1,9 +1,9 @@
 ﻿using GymManagement.Domain.Subscriptions;
 using MediatR;
 using ErrorOr;
-using GymManagement.Application.Common.Interfaces;
+using GymManagement.Api.Common.Interfaces;
 
-namespace GymManagement.Application.Sunscriptions.Queries.GetSubscription;
+namespace GymManagement.Api.Sunscriptions.Queries.GetSubscription;
 
 public class GetSubscriptionQueryHandler : IRequestHandler<GetSubscriptionQuery, ErrorOr<Subscription>>
 {
