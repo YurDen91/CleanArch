@@ -7,7 +7,7 @@ public class CreateGymCommandValidator : AbstractValidator<CreateGymCommand>
     public CreateGymCommandValidator()
     {
         RuleFor(x => x.Name)
-            .NotEmpty().WithMessage("Name is required.")
-            .MinimumLength(3).MaximumLength(100).WithMessage("Name must not exceed 200 characters.");
+            .MinimumLength(3)
+            .MaximumLength(100);
     }
 }
