@@ -13,6 +13,7 @@ public static class DepemdencyInjection
             options.RegisterServicesFromAssemblyContaining(typeof(DepemdencyInjection));
 
             options.AddOpenBehavior(typeof(ValidationBehavior<,>));
+            options.AddOpenBehavior(typeof(AuthorizationBehavior<,>));
         });
 
         services.AddValidatorsFromAssemblyContaining(typeof(DepemdencyInjection));
