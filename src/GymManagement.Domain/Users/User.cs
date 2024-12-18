@@ -36,9 +36,7 @@ public class User : Entity
     }
 
     public bool IsCorrectPasswordHash(string password, IPasswordHasher passwordHasher)
-    {
-        return passwordHasher.IsCorrectPassword(password, _passwordHash);
-    }
+        => passwordHasher.IsCorrectPassword(password, _passwordHash);
 
     public ErrorOr<Guid> CreateAdminProfile()
     {
