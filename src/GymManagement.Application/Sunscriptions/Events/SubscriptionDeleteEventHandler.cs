@@ -1,4 +1,4 @@
-﻿using GymManagement.Api.Common.Interfaces;
+﻿using GymManagement.Application.Common.Interfaces;
 using GymManagement.Domain.Admins.Events;
 using MediatR;
 

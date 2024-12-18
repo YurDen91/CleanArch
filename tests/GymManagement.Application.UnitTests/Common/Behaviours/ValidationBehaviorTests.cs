@@ -2,8 +2,8 @@
 using FluentAssertions;
 using FluentValidation.Results;
 using ErrorOr;
-using GymManagement.Api.Common.Behaviors;
 using GymManagement.Api.Gyms.Commands.CreateGym;
+using GymManagement.Application.Common.Behaviors;
 using MediatR;
 using NSubstitute;
 using TestCommon.Gyms;

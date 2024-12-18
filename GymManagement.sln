@@ -52,6 +52,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Application.U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Application.SubcutaneousTests", "tests\GymManagement.Application.SubcutaneousTests\GymManagement.Application.SubcutaneousTests.csproj", "{FC90AB5D-AA26-4B86-A321-86F73F44EA2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Api.IntegrationTests", "tests\GymManagement.Api.IntegrationTests\GymManagement.Api.IntegrationTests.csproj", "{132BB4E3-BDD3-4087-A285-E169D1B2E257}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{CEC496C5-A31F-4E7C-8E1D-D4CD89D047C2}"
+	ProjectSection(SolutionItems) = preProject
+		Login.http = Login.http
+		Register.http = Register.http
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Profiles", "Profiles", "{5D165DC9-18DE-4E80-A611-1FFC62C9FC57}"
+	ProjectSection(SolutionItems) = preProject
+		CreateProfile.http = CreateProfile.http
+		ListProfiles.http = ListProfiles.http
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -94,6 +108,10 @@ Global
 		{FC90AB5D-AA26-4B86-A321-86F73F44EA2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC90AB5D-AA26-4B86-A321-86F73F44EA2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC90AB5D-AA26-4B86-A321-86F73F44EA2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{132BB4E3-BDD3-4087-A285-E169D1B2E257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{132BB4E3-BDD3-4087-A285-E169D1B2E257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{132BB4E3-BDD3-4087-A285-E169D1B2E257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{132BB4E3-BDD3-4087-A285-E169D1B2E257}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,5 +131,8 @@ Global
 		{C3BEF905-6772-4B75-976F-CFAB6C5BD3B0} = {74A9DED6-A1E7-4CA8-8AF6-A7896927B369}
 		{3FCC5382-6E00-4E5B-97D6-5E6FA988CEF4} = {74A9DED6-A1E7-4CA8-8AF6-A7896927B369}
 		{FC90AB5D-AA26-4B86-A321-86F73F44EA2C} = {74A9DED6-A1E7-4CA8-8AF6-A7896927B369}
+		{132BB4E3-BDD3-4087-A285-E169D1B2E257} = {74A9DED6-A1E7-4CA8-8AF6-A7896927B369}
+		{CEC496C5-A31F-4E7C-8E1D-D4CD89D047C2} = {A7D82637-2DF8-4718-8D5D-5CD7263BE9DC}
+		{5D165DC9-18DE-4E80-A611-1FFC62C9FC57} = {A7D82637-2DF8-4718-8D5D-5CD7263BE9DC}
 	EndGlobalSection
 EndGlobal

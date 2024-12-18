@@ -1,7 +1,7 @@
 ﻿using GymManagement.Domain.Subscriptions;
 using MediatR;
 using ErrorOr;
-using GymManagement.Api.Common.Interfaces;
+using GymManagement.Application.Common.Interfaces;
 
 namespace GymManagement.Api.Sunscriptions.Queries.GetSubscription;
 

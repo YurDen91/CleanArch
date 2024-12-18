@@ -2,7 +2,7 @@
 using FluentValidation;
 using MediatR;
 
-namespace GymManagement.Api.Common.Behaviors;
+namespace GymManagement.Application.Common.Behaviors;
 
 public class ValidationBehavior<TRequest, TResponse>(IValidator<TRequest>? validator = null)
     : IPipelineBehavior<TRequest, TResponse>

@@ -1,4 +1,4 @@
-﻿namespace GymManagement.Api.Common.Behaviors;
+﻿namespace GymManagement.Application.Common.Behaviors;
 
 public class GenericBehaviorExample
 {

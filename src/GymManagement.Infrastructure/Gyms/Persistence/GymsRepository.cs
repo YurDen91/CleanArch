@@ -1,4 +1,4 @@
-using GymManagement.Api.Common.Interfaces;
+using GymManagement.Application.Common.Interfaces;
 using GymManagement.Domain.Gyms;
 using GymManagement.Infrastructure.Common.Persistence;
 using Microsoft.EntityFrameworkCore;

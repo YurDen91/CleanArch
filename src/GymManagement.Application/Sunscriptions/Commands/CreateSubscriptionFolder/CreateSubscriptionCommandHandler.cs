@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using ErrorOr;
-using GymManagement.Api.Common.Interfaces;
+using GymManagement.Application.Common.Interfaces;
 using GymManagement.Domain.Subscriptions;
 
 namespace GymManagement.Api.Sunscriptions.Commands.CreateSubscriptionFolder;
